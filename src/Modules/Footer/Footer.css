@@ -1,10 +1,10 @@
-.Navbar{
+.partners{
     background-color: rgb(69, 67, 67);
     color: whitesmoke;
     height:50px;
-    padding-top: 10px;
+    margin-top: 600px;
 }
-.title{
+.footer{
     color: rgb(198, 32, 32);
     font-size: larger;
     font-weight: bold;
