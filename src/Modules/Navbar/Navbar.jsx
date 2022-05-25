@@ -1,35 +1,27 @@
-import M from 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
+import './Navbar.css';
 
 function Navbar() {
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init();
-    });
-    return (
-        <div>
-            <nav>
-                <div className="nav-wrapper">
-                    <a href="#!" className="brand-logo">Logo</a>
-                    <a href="#" data-target="mobile-demo" className="sidenav-trigger">
-                        <i className="material-icons">menu</i></a>
-                    <ul className="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">Javascript</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <ul className="sidenav" id="mobile-demo">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-            </ul>
-
-        </div>
+    return(
+   <div className="container-fluid Navbar">
+<div className="row">
+<div className="col title">
+        ConsumerRights.pk
+    </div>
+    <div className="col s3 m2 l3">
+        Home
+    </div>
+    <div className="col s3 m2 l2">
+        Complaints
+    </div>
+    <div className="col s3 m2 l2">
+        Blog
+    </div>
+    <div className="col s3 m2 l2">
+        About us
+    </div>
+</div>
+   </div>
     );
 }
 export default Navbar;
